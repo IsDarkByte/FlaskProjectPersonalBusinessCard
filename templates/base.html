@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Ислам — Flask Dev{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="{% block body_class %}{% endblock %}">
+
+    <nav class="navbar">
+        <a href="/">🏠 Главная</a>
+        <a href="/projects">🚀 Проекты</a>
+        <a href="/about">👤 Обо мне</a>
+        <a href="/contacts">📬 Контакты</a>
+        <button id="theme-toggle" class="theme-btn">🌗 Тема</button>
+    </nav>
+
+    <div class="card">
+        {% block content %}{% endblock %}
+    </div>
+
+    <script>
+        const toggleBtn = document.getElementById("theme-toggle");
+
+        toggleBtn?.addEventListener("click", () => {
+            document.body.classList.toggle("light");
+            localStorage.setItem("theme", document.body.classList.contains("light") ? "light" : "dark");
+        });
+
+        window.addEventListener("load", () => {
+            const savedTheme = localStorage.getItem("theme");
+            if (savedTheme === "light") {
+                document.body.classList.add("light");
+            }
+        });
+    </script>
+</body>
+</html>

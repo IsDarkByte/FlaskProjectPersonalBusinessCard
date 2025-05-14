@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Проекты Ислама{% endblock %}
+
+{% block content %}
+    <h1>🚀 Репозитории GitHub</h1>
+
+    {% for repo in repos %}
+    <div class="project">
+        <h2>{{ loop.index }}. <a href="{{ repo.html_url }}" target="_blank">{{ repo.name }}</a></h2>
+        <p>{{ repo.description or "Описание не указано." }}</p>
+        <p><code>⭐ Stars: {{ repo.stargazers_count }} | 🍴 Forks: {{ repo.forks_count }}</code></p>
+    </div>
+    {% endfor %}
+{% endblock %}

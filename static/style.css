@@ -1,0 +1,167 @@
+:root {
+    /* Общие переменные */
+    --font-main: "Consolas", "Courier New", monospace;
+    --radius: 10px;
+    --transition: all 0.3s ease-in-out;
+
+    /* Тема по умолчанию — тёмная */
+    --bg-color: #0f0f0f;
+    --text-color: #00ffff;
+    --accent-color: #ff00ff;
+    --card-bg: #121212;
+    --alt-bg: #1a1a2e;
+    --shadow: #00ffffaa;
+    --hover-shadow: #00ffffee;
+    --border-color: #00ffff;
+}
+
+/* Светлая тема */
+body.light {
+    --bg-color: #f0f0f0;
+    --text-color: #1a1a1a;
+    --accent-color: #0044ff;
+    --card-bg: #ffffff;
+    --alt-bg: #dddddd;
+    --shadow: #0044ffaa;
+    --hover-shadow: #0044ffee;
+    --border-color: #0044ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: neonGlow 10s infinite alternate;
+    transition: var(--transition);
+}
+
+@keyframes neonGlow {
+    0% {
+        background-color: var(--bg-color);
+    }
+    100% {
+        background-color: var(--alt-bg);
+    }
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+/* Навбар */
+.navbar {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    background-color: var(--alt-bg);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    box-shadow: 0 0 15px var(--shadow);
+    z-index: 10;
+}
+
+.navbar a:hover {
+    text-shadow: 0 0 10px var(--accent-color);
+}
+
+/* Кнопка смены темы */
+.theme-btn {
+    background: none;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    border-radius: var(--radius);
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: var(--transition);
+}
+
+.theme-btn:hover {
+    background-color: var(--accent-color);
+    color: white;
+    box-shadow: 0 0 10px var(--accent-color);
+}
+
+/* Карточка */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 30px;
+    border-radius: var(--radius);
+    text-align: center;
+    box-shadow: 0 0 20px var(--shadow);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px var(--hover-shadow);
+}
+
+/* Проекты */
+.project {
+    background-color: var(--alt-bg);
+    margin: 15px 0;
+    padding: 20px;
+    border-left: 4px solid var(--border-color);
+    border-radius: var(--radius);
+    box-shadow: 0 0 10px var(--shadow);
+    transition: var(--transition);
+}
+
+.project:hover {
+    transform: scale(1.02);
+    border-left-color: var(--accent-color);
+}
+
+/* Кнопка проектов (если используешь) */
+.btn-projects {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border: none;
+    border-radius: var(--radius);
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0 10px var(--shadow);
+    transition: var(--transition);
+}
+
+.btn-projects:hover {
+    background-color: var(--accent-color);
+    color: var(--card-bg);
+    box-shadow: 0 0 15px var(--accent-color);
+}
+
+/* Адаптивность */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card {
+        width: 90%;
+    }
+}
