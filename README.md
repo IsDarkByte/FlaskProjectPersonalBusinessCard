@@ -41,7 +41,8 @@ Click the button below to deploy on Render:
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
 
-> ⚠️ Убедись, что у тебя есть файл `requirements.txt` и `app.py` в корне проекта.
+> ⚠️ Убедитесь, что у вас есть `render.yaml`, `requirements.txt` и `app.py` в вашем корневом каталоге.
+> ⚠️  Make sure you have a `render.yaml`, `requirements.txt` and `app.py` in your root directory.
 
 ---
 
