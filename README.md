@@ -69,3 +69,10 @@ Telegram: @IsDarkByte
 Этот проект лицензирован по [MIT License](LICENSE).
 
 This project is licensed under the [MIT License](LICENSE).
+
+
+
+
+
+Иконка пользователя от [Smashicons — Flaticon](https://www.flaticon.com/ru/free-icons/).
+
