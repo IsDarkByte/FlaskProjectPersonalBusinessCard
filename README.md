@@ -61,3 +61,7 @@ python app.py
 GitHub: IsDarkByte
 
 Telegram: @IsDarkByte
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
