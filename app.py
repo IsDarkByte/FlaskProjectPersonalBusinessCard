@@ -9,7 +9,7 @@ app.config['CACHE_DEFAULT_TIMEOUT'] = 600  # 10 минут
 
 cache = Cache(app)
 
-GITHUB_USERNAME = "IslamMuha"
+GITHUB_USERNAME = "IsDarkByte"
 
 @app.route("/")
 def home():
