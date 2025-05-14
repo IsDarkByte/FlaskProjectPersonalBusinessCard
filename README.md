@@ -58,4 +58,5 @@ python app.py
 
 📬 Контакты / Contacts
 GitHub: IsDarkByte
+
 Telegram: @IsDarkByte
