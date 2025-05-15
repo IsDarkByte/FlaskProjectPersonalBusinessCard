@@ -1,5 +1,14 @@
 # 🧠 FlaskProjectPersonalBusinessCard
 
+<p align="center">
+  <img src="static/banner.png" alt="IsDarkByte — Flask Backend Developer Banner" style="width:100%;">
+</p>
+
+<p align="center">
+  <b>IsDarkByte</b><br/>
+  <i>Flask backend developer • Cyberpunk-inspired projects • Conscious engineering</i>
+</p>
+
 🌐 **Личный сайт-визитка на Flask**  
 🚀 A personal business card site built with Flask, styled in cyberpunk design.
 
