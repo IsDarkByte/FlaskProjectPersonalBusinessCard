@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 from flask_caching import Cache
 import requests
 
@@ -39,6 +39,18 @@ def about():
 @app.route("/contacts")
 def contacts():
     return render_template("contacts.html")
+
+@app.route("/api/profile")
+def api_profile():
+    profile = {
+        "name": "Ислам Мухаматуллин",
+        "nickname": "IsDarkByte",
+        "github": "https://github.com/IsDarkByte",
+        "telegram": "https://t.me/IsDarkByte",
+        "certificate": "/static/BestInPython_001290.pdf",
+        "skills": ["Python", "Flask", "HTML", "CSS", "REST", "Git"]
+    }
+    return jsonify(profile)
 
 if __name__ == "__main__":
     app.run(debug=True)
