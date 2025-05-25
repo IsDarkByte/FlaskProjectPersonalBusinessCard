@@ -1,0 +1,19 @@
+# Виртуальное окружение
+.venv/
+
+# Кеш и сборки
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+*.log
+
+# Git
+.git/
+.gitignore
+
+# Системные файлы
+.DS_Store
+.env
+.vscode/
