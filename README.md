@@ -3,45 +3,47 @@
 # 🧠 FlaskProjectPersonalBusinessCard
 
 <p align="center">
-  <img src="app/static/banner.png" alt="IsDarkByte — Flask Backend Developer Banner" style="width:100%;">
+  <img src="app/static/banner.png" alt="IsDarkByte — Python Backend Developer" style="width:100%;">
 </p>
 
 <p align="center">
   <b>IsDarkByte</b><br/>
-  <i>Flask backend developer • Cyberpunk-inspired projects • Conscious engineering</i>
+  <i>Python backend developer • Cyberpunk-inspired projects • Conscious engineering</i>
 </p>
 
+---
+
 🌐 **Личный сайт-визитка на Flask**  
-🚀 A personal business card site built with Flask, styled in cyberpunk design.
+🚀 A personal cyberpunk-style business card site built with Flask.
 
 ---
 
 ## 🇷🇺 Описание проекта
 
-Этот проект — минималистичная визитка backend-разработчика на Flask, выполненная в неоновом/киберпанк-стиле.  
-Содержит:
+Минималистичная визитка backend-разработчика на Flask:
 
-- Главную страницу с информацией
-- Блок с проектами, подгружаемыми из GitHub через API
-- Контакты и сертификат
-- Переключение темы (светлая/тёмная)
-- REST API-эндпоинт (в будущем)
+- 🧠 Главная страница с информацией
+- 🚀 Раздел с проектами (подгрузка с GitHub API)
+- 📬 Контакты и сертификат
+- 🌗 Переключение темы (тёмная / светлая)
+- 🔌 Подготовка к REST API (в будущем)
+- 🧪 Автоматическое тестирование через GitHub Actions
 
-### 🔧 Стек:
-`Python • Flask • Jinja2 • HTML • CSS • Git`
+### 🔧 Стек технологий:
+`Python • Flask • Jinja2 • HTML • CSS • Git • GitHub Actions`
 
 ---
 
-## 🇺🇸 Project description
+## 🇺🇸 Project Description
 
-This is a minimalist cyberpunk-style personal website built using Flask.  
-It includes:
+A minimalist cyberpunk-style personal website built with Flask:
 
-- Main page with bio
-- Projects list loaded from GitHub API
-- Contact section with links and certificate
-- Theme toggle (light/dark)
-- REST API endpoint (soon)
+- 🧠 Main page with developer bio
+- 🚀 Projects section with GitHub integration
+- 📬 Contact info and certificate
+- 🌗 Dark/light theme toggle
+- 🔌 REST API planned
+- 🧪 Automated testing via GitHub Actions
 
 ---
 
@@ -61,12 +63,12 @@ Click the button below to deploy on Render:
 ## 🧪 Как запустить локально / How to run locally
 
 ```bash
-git clone https://github.com/IslamMuha/FlaskProjectPersonalBusinessCard.git
+git clone https://github.com/IsDarkByte/FlaskProjectPersonalBusinessCard.git
 cd FlaskProjectPersonalBusinessCard
 python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
+.venv\Scripts\activate  # (на Windows)
 pip install -r requirements.txt
-python app.py
+python run.py
 ```
 
 📬 Контакты / Contacts
