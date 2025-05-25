@@ -3,7 +3,7 @@
 # 🧠 FlaskProjectPersonalBusinessCard
 
 <p align="center">
-  <img src="static/banner.png" alt="IsDarkByte — Flask Backend Developer Banner" style="width:100%;">
+  <img src="app/static/banner.png" alt="IsDarkByte — Flask Backend Developer Banner" style="width:100%;">
 </p>
 
 <p align="center">
