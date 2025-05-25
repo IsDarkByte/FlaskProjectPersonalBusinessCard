@@ -1,3 +1,5 @@
+![Test](https://github.com/IsDarkByte/FlaskProjectPersonalBusinessCard/actions/workflows/test.yml/badge.svg)
+
 # 🧠 FlaskProjectPersonalBusinessCard
 
 <p align="center">
