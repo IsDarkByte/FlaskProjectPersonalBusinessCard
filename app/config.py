@@ -8,3 +8,9 @@ class Config:
     SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key")
     DEBUG = os.getenv("FLASK_ENV") == "development"
     GITHUB_USERNAME = os.getenv("GITHUB_USERNAME", "unknown")
+
+class ProductionConfig(Config):
+    DEBUG = False
+
+class DevelopmentConfig(Config):
+    DEBUG = True
