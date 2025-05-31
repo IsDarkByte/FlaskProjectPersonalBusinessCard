@@ -1,11 +1,12 @@
 from flask import Blueprint, render_template
+from app.cache import cache
 import requests
-from app.cache import cache  # подключаем кеш
+import os
 
 
 projects_bp = Blueprint('projects', __name__)
 
-GITHUB_USERNAME = "IsDarkByte"
+GITHUB_USERNAME = os.getenv("GITHUB_USERNAME", "IsDarkByte")
 
 @projects_bp.route("/projects")
 @cache.cached(timeout=300)  # кеш на 5 минут
