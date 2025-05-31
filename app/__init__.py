@@ -1,11 +1,12 @@
 from flask import Flask
-from .cache import cache  # Импортируем кеш из cache.py
+from .cache import cache
+from .config import Config
 
 
 def create_app():
     app = Flask(__name__)
+    app.config.from_object(Config)
 
-    # Инициализация кеша с Flask-приложением
     cache.init_app(app)
 
     from .routes.main import main_bp
